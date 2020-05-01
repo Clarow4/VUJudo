@@ -3,17 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0690020A5C69A9044EAAA6B6 /* Pods_VUJudo1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54538FAD205CC17D81655D1 /* Pods_VUJudo1Tests.framework */; };
+		20A74BBBDA7DC8D1C78156C5 /* Pods_VUJudo1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD5BBBB32AED928598A7626 /* Pods_VUJudo1.framework */; };
 		EA0DB68F243D6DE0005D16DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB68E243D6DE0005D16DC /* AppDelegate.swift */; };
 		EA0DB691243D6DE0005D16DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB690243D6DE0005D16DC /* SceneDelegate.swift */; };
-		EA0DB693243D6DE0005D16DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB692243D6DE0005D16DC /* ViewController.swift */; };
-		EA0DB696243D6DE1005D16DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0DB694243D6DE1005D16DC /* Main.storyboard */; };
 		EA0DB698243D6DE7005D16DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0DB697243D6DE7005D16DC /* Assets.xcassets */; };
 		EA0DB69B243D6DE7005D16DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0DB699243D6DE7005D16DC /* LaunchScreen.storyboard */; };
 		EA0DB6A6243D6DE8005D16DC /* VUJudo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6A5243D6DE8005D16DC /* VUJudo1Tests.swift */; };
+		EA0DB6B1243D700D005D16DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6B0243D700D005D16DC /* LoginViewController.swift */; };
+		EA0DB6B3243D7646005D16DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6B2243D7646005D16DC /* SignUpViewController.swift */; };
+		EA4F0105245922380087B3E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4F0103245922380087B3E5 /* Main.storyboard */; };
+		EA4F01072459295F0087B3E5 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F01062459295F0087B3E5 /* LibraryViewController.swift */; };
+		EAA72BF0243E5F7A0051E35D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA72BEF243E5F7A0051E35D /* GoogleService-Info.plist */; };
+		EAA72BF2243E78960051E35D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA72BF1243E78960051E35D /* HomeViewController.swift */; };
+		EACA325C2457CE3100A73B75 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA325B2457CE3000A73B75 /* LogViewController.swift */; };
+		EAF2E1DB245526890030C325 /* LeadershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF2E1DA245526890030C325 /* LeadershipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +35,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AD72C4F9BA5F8A1BDE3F1DE /* Pods-VUJudo1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUJudo1.release.xcconfig"; path = "Target Support Files/Pods-VUJudo1/Pods-VUJudo1.release.xcconfig"; sourceTree = "<group>"; };
+		67E007630DF60D7EF6556B26 /* Pods-VUJudo1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUJudo1Tests.release.xcconfig"; path = "Target Support Files/Pods-VUJudo1Tests/Pods-VUJudo1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6DD5BBBB32AED928598A7626 /* Pods_VUJudo1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUJudo1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B4D42B0A9060048B4EA9A4 /* Pods-VUJudo1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUJudo1.debug.xcconfig"; path = "Target Support Files/Pods-VUJudo1/Pods-VUJudo1.debug.xcconfig"; sourceTree = "<group>"; };
+		A543F945AB3E4259DCF335BB /* Pods-VUJudo1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUJudo1Tests.debug.xcconfig"; path = "Target Support Files/Pods-VUJudo1Tests/Pods-VUJudo1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D54538FAD205CC17D81655D1 /* Pods_VUJudo1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUJudo1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0DB68B243D6DE0005D16DC /* VUJudo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VUJudo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0DB68E243D6DE0005D16DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA0DB690243D6DE0005D16DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA0DB692243D6DE0005D16DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA0DB695243D6DE1005D16DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA0DB697243D6DE7005D16DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA0DB69A243D6DE7005D16DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA0DB69C243D6DE7005D16DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA0DB6A1243D6DE8005D16DC /* VUJudo1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VUJudo1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0DB6A5243D6DE8005D16DC /* VUJudo1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VUJudo1Tests.swift; sourceTree = "<group>"; };
 		EA0DB6A7243D6DE8005D16DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0DB6B0243D700D005D16DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA0DB6B2243D7646005D16DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EA4F0104245922380087B3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA4F01062459295F0087B3E5 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		EAA72BEF243E5F7A0051E35D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAA72BF1243E78960051E35D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EACA325B2457CE3000A73B75 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		EAF2E1DA245526890030C325 /* LeadershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A74BBBDA7DC8D1C78156C5 /* Pods_VUJudo1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +73,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0690020A5C69A9044EAAA6B6 /* Pods_VUJudo1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C2F31AE98FF006AE4E40785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD5BBBB32AED928598A7626 /* Pods_VUJudo1.framework */,
+				D54538FAD205CC17D81655D1 /* Pods_VUJudo1Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2E6AAC17BF25A970A559E9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89B4D42B0A9060048B4EA9A4 /* Pods-VUJudo1.debug.xcconfig */,
+				1AD72C4F9BA5F8A1BDE3F1DE /* Pods-VUJudo1.release.xcconfig */,
+				A543F945AB3E4259DCF335BB /* Pods-VUJudo1Tests.debug.xcconfig */,
+				67E007630DF60D7EF6556B26 /* Pods-VUJudo1Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA0DB682243D6DE0005D16DC = {
 			isa = PBXGroup;
 			children = (
 				EA0DB68D243D6DE0005D16DC /* VUJudo1 */,
 				EA0DB6A4243D6DE8005D16DC /* VUJudo1Tests */,
 				EA0DB68C243D6DE0005D16DC /* Products */,
+				A2E6AAC17BF25A970A559E9A /* Pods */,
+				4C2F31AE98FF006AE4E40785 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,11 +124,17 @@
 			isa = PBXGroup;
 			children = (
 				EA0DB68E243D6DE0005D16DC /* AppDelegate.swift */,
+				EA4F0103245922380087B3E5 /* Main.storyboard */,
 				EA0DB690243D6DE0005D16DC /* SceneDelegate.swift */,
-				EA0DB692243D6DE0005D16DC /* ViewController.swift */,
-				EA0DB694243D6DE1005D16DC /* Main.storyboard */,
+				EACA325B2457CE3000A73B75 /* LogViewController.swift */,
+				EA4F01062459295F0087B3E5 /* LibraryViewController.swift */,
+				EAF2E1DA245526890030C325 /* LeadershipViewController.swift */,
+				EAA72BF1243E78960051E35D /* HomeViewController.swift */,
+				EA0DB6B2243D7646005D16DC /* SignUpViewController.swift */,
+				EA0DB6B0243D700D005D16DC /* LoginViewController.swift */,
 				EA0DB697243D6DE7005D16DC /* Assets.xcassets */,
 				EA0DB699243D6DE7005D16DC /* LaunchScreen.storyboard */,
+				EAA72BEF243E5F7A0051E35D /* GoogleService-Info.plist */,
 				EA0DB69C243D6DE7005D16DC /* Info.plist */,
 			);
 			path = VUJudo1;
@@ -106,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA0DB6AA243D6DE8005D16DC /* Build configuration list for PBXNativeTarget "VUJudo1" */;
 			buildPhases = (
+				7D83BA92CDCCF7A0B93DC863 /* [CP] Check Pods Manifest.lock */,
 				EA0DB687243D6DE0005D16DC /* Sources */,
 				EA0DB688243D6DE0005D16DC /* Frameworks */,
 				EA0DB689243D6DE0005D16DC /* Resources */,
+				742213B5AB0352D9EB0831EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA0DB6AD243D6DE8005D16DC /* Build configuration list for PBXNativeTarget "VUJudo1Tests" */;
 			buildPhases = (
+				A686AC7ECC96B9168A5A565B /* [CP] Check Pods Manifest.lock */,
 				EA0DB69D243D6DE8005D16DC /* Sources */,
 				EA0DB69E243D6DE8005D16DC /* Frameworks */,
 				EA0DB69F243D6DE8005D16DC /* Resources */,
@@ -182,7 +235,8 @@
 			files = (
 				EA0DB69B243D6DE7005D16DC /* LaunchScreen.storyboard in Resources */,
 				EA0DB698243D6DE7005D16DC /* Assets.xcassets in Resources */,
-				EA0DB696243D6DE1005D16DC /* Main.storyboard in Resources */,
+				EAA72BF0243E5F7A0051E35D /* GoogleService-Info.plist in Resources */,
+				EA4F0105245922380087B3E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +249,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		742213B5AB0352D9EB0831EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VUJudo1/Pods-VUJudo1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VUJudo1/Pods-VUJudo1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VUJudo1/Pods-VUJudo1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D83BA92CDCCF7A0B93DC863 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VUJudo1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A686AC7ECC96B9168A5A565B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VUJudo1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA0DB687243D6DE0005D16DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0DB693243D6DE0005D16DC /* ViewController.swift in Sources */,
+				EAF2E1DB245526890030C325 /* LeadershipViewController.swift in Sources */,
+				EA0DB6B1243D700D005D16DC /* LoginViewController.swift in Sources */,
+				EACA325C2457CE3100A73B75 /* LogViewController.swift in Sources */,
 				EA0DB68F243D6DE0005D16DC /* AppDelegate.swift in Sources */,
 				EA0DB691243D6DE0005D16DC /* SceneDelegate.swift in Sources */,
+				EA0DB6B3243D7646005D16DC /* SignUpViewController.swift in Sources */,
+				EA4F01072459295F0087B3E5 /* LibraryViewController.swift in Sources */,
+				EAA72BF2243E78960051E35D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,20 +348,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA0DB694243D6DE1005D16DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA0DB695243D6DE1005D16DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA0DB699243D6DE7005D16DC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EA0DB69A243D6DE7005D16DC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA4F0103245922380087B3E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA4F0104245922380087B3E5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -360,6 +483,7 @@
 		};
 		EA0DB6AB243D6DE8005D16DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B4D42B0A9060048B4EA9A4 /* Pods-VUJudo1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +502,7 @@
 		};
 		EA0DB6AC243D6DE8005D16DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD72C4F9BA5F8A1BDE3F1DE /* Pods-VUJudo1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +521,7 @@
 		};
 		EA0DB6AE243D6DE8005D16DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A543F945AB3E4259DCF335BB /* Pods-VUJudo1Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +544,7 @@
 		};
 		EA0DB6AF243D6DE8005D16DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E007630DF60D7EF6556B26 /* Pods-VUJudo1Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

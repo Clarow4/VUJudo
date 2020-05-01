@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>394247157648-dnl4oer8h3skf4kq0963898qgaid7h80.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.394247157648-dnl4oer8h3skf4kq0963898qgaid7h80</string>
+	<key>API_KEY</key>
+	<string>AIzaSyByRSF-TdLCiszVIlnl81Ir5I0SCaDO34s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>394247157648</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>example.VUJudo1</string>
+	<key>PROJECT_ID</key>
+	<string>vujudologin</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vujudologin.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:394247157648:ios:78fc4e90e9e832cd1a2515</string>
+	<key>DATABASE_URL</key>
+	<string>https://vujudologin.firebaseio.com</string>
+</dict>
+</plist>
