@@ -113,7 +113,6 @@ class SignUpViewController: UIViewController {
                 "lastName": enterLastName.text!,
                 "email": email.text!,
                 "score": 0,
-                "rank": 0
             ]) {err in
                 if let err = err {
                     let alertController = UIAlertController(title: "Error", message: err.localizedDescription, preferredStyle: .alert)
@@ -127,18 +126,6 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    
-    //passes email variable to HomeView during segue so it can access firestore
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SignUpToHome" {
-            if let nextVC = segue.destination as? HomeViewController {
-                nextVC.docEmail = email.text
-            }
-            else {
-                print("error")
-            }
-        }
-    }
     
     override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+ platform :ios, '10.0'
 
 target 'VUJudo1' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -11,8 +11,8 @@ target 'VUJudo1' do
       pod 'Firebase/Firestore'
       pod 'FirebaseFirestoreSwift'
       pod 'Firebase/Database'
-      pod 'SwiftyMenu', '~>0.48'
-
+      pod 'Firebase/Functions'
+      pod 'SwiftyMenu', '~> 0.6.3'
 	
   target 'VUJudo1Tests' do
     inherit! :search_paths

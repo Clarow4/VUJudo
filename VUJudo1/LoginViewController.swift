@@ -85,17 +85,6 @@ class LoginViewController: UIViewController{
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "LoginToHome" {
-            if let nextVC = segue.destination as? HomeViewController {
-                nextVC.docEmail = email.text
-            }
-            else {
-                print("error")
-            }
-        }
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
