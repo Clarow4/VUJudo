@@ -9,12 +9,62 @@
 import UIKit
 import SwiftUI
 import FirebaseAuth
+import FirebaseFirestore
+import FirebaseFunctions
+import JavaScriptCore
 
 class LoginViewController: UIViewController{
     
+    var jsContext: JSContext!
+    var db: Firestore!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.initializeJS()
+        self.callJSMethods()
+        db = Firestore.firestore()
+      //  let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
+    func initializeJS() {
+        self.jsContext = JSContext()
+        
+        let functions = self.jsContext.objectForKeyedSubscript("functions")
+        let admin = self.jsContext.objectForKeyedSubscript("admin")
+        let schedule = self.jsContext.objectForKeyedSubscript("schedule")
+        
+        let jsDB = self.jsContext.objectForKeyedSubscript("db")
+        
+
+        //specify the path to the js file
+        if let jsSourcePath = Bundle.main.path(forResource: "app", ofType: "js") {
+            do {
+                //Load its contents to a String cariable
+                let jsSourceContents = try String(contentsOfFile: jsSourcePath)
+                
+                self.jsContext.evaluateScript(jsSourceContents)
+            }
+            catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func callJSMethods() {
+        if let jsMethod1 =  self.jsContext.objectForKeyedSubscript("setLeaderboardHistory") {
+            if let getLeaderboardHist = jsMethod1.call(withArguments: nil) {
+                print("success?")
+            }
+        }
+
+    }
+    
 
     @IBOutlet weak var VUJudoTopper: UILabel!
     
@@ -31,6 +81,7 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var enterPassword: UILabel!
     
     @IBOutlet weak var password: UITextField!
+
 
     @IBSegueAction func LoginToHomeSegue(_ coder: NSCoder) -> HomeViewController? {
         return HomeViewController(coder: coder)
@@ -85,27 +136,11 @@ class LoginViewController: UIViewController{
         }
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+
 }
     
 
-
-
-struct LoginViewRepresentable: UIViewRepresentable {
-    func makeUIView(context: Context) -> UIView {
-        return UIStoryboard(name:"Main", bundle: Bundle.main).instantiateInitialViewController()!.view
-    }
-    
-    func updateUIView(_ view: UIView, context: Context) {
-        
-    }
-}
-
-
-struct LoginViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginViewRepresentable()
-    }
-}

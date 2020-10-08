@@ -110,7 +110,6 @@ class HomeViewController: UIViewController {
         }
         
         setDailyTechnique {
-            print("filler code")
         }
     }
     
@@ -127,10 +126,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var score: UILabel!
     
    
-    @IBOutlet weak var dailyTechnique: UILabel!
+    @IBOutlet weak var weeklyTechnique: UILabel!
     
     
-    @IBAction func dailyTechniqueButton(_ sender: Any) {
+    @IBAction func weeklyTechniqueButton(_ sender: Any) {
         self.performSegue(withIdentifier: "HomeToLog", sender: self)
     }
     
@@ -152,7 +151,7 @@ class HomeViewController: UIViewController {
                         
                         if isDailyAssignment == true {
                             self.passedName = dataName
-                            self.dailyTechnique.text = "Today's \nTechnique"
+                            self.weeklyTechnique.text = "This Week's \nTechnique"
                         }
                      
                     }

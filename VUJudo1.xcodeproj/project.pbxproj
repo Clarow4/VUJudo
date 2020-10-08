@@ -17,6 +17,7 @@
 		EA0DB6B1243D700D005D16DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6B0243D700D005D16DC /* LoginViewController.swift */; };
 		EA0DB6B3243D7646005D16DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DB6B2243D7646005D16DC /* SignUpViewController.swift */; };
 		EA4F0105245922380087B3E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4F0103245922380087B3E5 /* Main.storyboard */; };
+		EA51CA4D24F0993300DA133D /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = EA51CA4C24F0993300DA133D /* app.js */; };
 		EA7B5EEE2496AB54008B0017 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7B5EED2496AB54008B0017 /* LibraryViewController.swift */; };
 		EA911521245F71040017794A /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA911520245F71040017794A /* LibraryTableViewCell.swift */; };
 		EAA72BF0243E5F7A0051E35D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA72BEF243E5F7A0051E35D /* GoogleService-Info.plist */; };
@@ -55,6 +56,7 @@
 		EA0DB6B0243D700D005D16DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA0DB6B2243D7646005D16DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA4F0104245922380087B3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA51CA4C24F0993300DA133D /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
 		EA7B5EED2496AB54008B0017 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		EA911520245F71040017794A /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 		EAA72BEF243E5F7A0051E35D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		EA0DB68D243D6DE0005D16DC /* VUJudo1 */ = {
 			isa = PBXGroup;
 			children = (
+				EA51CA4C24F0993300DA133D /* app.js */,
 				EA0DB68E243D6DE0005D16DC /* AppDelegate.swift */,
 				EA4F0103245922380087B3E5 /* Main.storyboard */,
 				EA911520245F71040017794A /* LibraryTableViewCell.swift */,
@@ -203,7 +206,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Christina LaRow";
 				TargetAttributes = {
 					EA0DB68A243D6DE0005D16DC = {
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA51CA4D24F0993300DA133D /* app.js in Resources */,
 				EA0DB69B243D6DE7005D16DC /* LaunchScreen.storyboard in Resources */,
 				EA0DB698243D6DE7005D16DC /* Assets.xcassets in Resources */,
 				EAA72BF0243E5F7A0051E35D /* GoogleService-Info.plist in Resources */,
@@ -401,6 +405,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -461,6 +466,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -494,8 +500,8 @@
 			baseConfigurationReference = 89B4D42B0A9060048B4EA9A4 /* Pods-VUJudo1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5UF9496YVU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VUJudo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = example.VUJudo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -513,8 +520,8 @@
 			baseConfigurationReference = 1AD72C4F9BA5F8A1BDE3F1DE /* Pods-VUJudo1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5UF9496YVU;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VUJudo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +529,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = example.VUJudo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

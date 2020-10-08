@@ -19,5 +19,6 @@ class LeaderboardCell: UITableViewCell {
     }
     
     @IBOutlet weak var rankText: UILabel!
+    @IBOutlet weak var scoreText: UILabel!
     
 }

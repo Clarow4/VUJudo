@@ -127,9 +127,9 @@ class LibraryViewController: UIViewController, UITableViewDataSource, UITableVie
               //for the next waza.count+1 cells, set the label in the cell to waza name
               if(indexPath.row <= self.waza.count) {
                     if indexPath.row == 0 {
-                        cell.wazaName.textAlignment = .center
                         cell.wazaName.text = "Uchikomi"
                         cell.wazaName.font = UIFont(name: "Baskerville-Bold", size: 30)
+                        cell.wazaName?.textAlignment = .center
                         cell.plusSign.isHidden = true
                     }
 
@@ -141,7 +141,7 @@ class LibraryViewController: UIViewController, UITableViewDataSource, UITableVie
                         cell.plusButton.tag = indexPath.row
                     }
                     //debugs ippon's lack of plus sign
-                    if cell.wazaName.text == "Ippon Seionage" {
+                    if cell.wazaName.text != "Uchikomi" {
                         cell.plusSign.isHidden = false
                         cell.plusButton.isHidden = false
                     }
@@ -195,7 +195,7 @@ class LibraryViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Passes the exercise/aza name and whether or not the name is a waza to the Log Screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LibraryToLog" {
             let nextVC = segue.destination as! LogViewController

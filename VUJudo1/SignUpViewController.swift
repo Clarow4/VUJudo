@@ -30,6 +30,10 @@ class SignUpViewController: UIViewController {
         db = Firestore.firestore()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+         view.endEditing(true)
+         super.touchesBegan(touches, with: event)
+     }
 
     //set up page elements
     @IBOutlet weak var blueTopper: UIImageView!

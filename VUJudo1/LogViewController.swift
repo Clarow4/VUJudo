@@ -9,6 +9,7 @@
 import UIKit
 import SwiftUI
 import Firebase
+import FirebaseFirestore
 import FirebaseAuth
 
 class LogViewController: UIViewController {
@@ -154,7 +155,7 @@ class LogViewController: UIViewController {
             
             //Easter egg
             if reps! >= 500 {
-                let easterEggAlert = UIAlertController(title: "Bullshit", message: "Christina calls bullshit on this. There's no way you did more than 500 reps. But I'll count it anyway.", preferredStyle: .alert)
+                let easterEggAlert = UIAlertController(title: "Bullshit", message: "I call bullshit. There's no way you did more than 500 reps. But I'll count it anyway.", preferredStyle: .alert)
                 easterEggAlert.addAction(UIAlertAction(title: "My bad", style: .cancel))
                 self.present(easterEggAlert, animated: true, completion: nil)
             }
@@ -168,6 +169,23 @@ class LogViewController: UIViewController {
                 //get user's score and update it to reflect new logged exercise
                 userDoc.getDocument {(snapshot, error) in
                    if let data = snapshot?.data() {
+                    
+                        //special case- cut Joe's score in half
+                        var checkForJoe = data["firstName"] as? String
+                    checkForJoe! += (data["lastName"] as? String)!
+                        if(checkForJoe == "JoeMore") {
+                            var fieldValue = data["score"] as? Int
+                            if self.isWaza == true {
+                                self.pointsEarned = self.reps! * self.wazaMultiplier!
+                            }
+                            else {
+                                self.pointsEarned = self.reps! * self.exerciseMultiplier!
+                            }
+                            fieldValue = fieldValue! + (self.pointsEarned!/2)
+                            userDoc.updateData(["score" : fieldValue!])
+                        }
+                    
+                        //update user score for everyone but JoeMore
                         var fieldValue = data["score"] as? Int
                         if self.isWaza == true {
                             self.pointsEarned = self.reps! * self.wazaMultiplier!
@@ -217,5 +235,10 @@ class LogViewController: UIViewController {
     }
     @objc func dismissAlertController() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
     }
 }
